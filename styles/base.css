@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Vast+Shadow&display=swap');
+
+html, body {
+    height: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+    transition: all .2s linear;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+:root {
+   
+   --bg-color:#F7F8FC;
+   --accent-color:hsl(147, 60%, 43%);
+   --text-heading-color:#0F1E26;
+   --highlighted-color:#E8EFFF;
+   --wrong-color:#dc0a0a;
+
+  /* green */
+  --green-1:hsl(147, 60%, 80%);
+  --green-2:hsl(147, 60%, 50%);
+  --green-3:hsl(147, 60%, 43%);
+  --green-4:hsl(147, 60%, 35%);
+
+
+
+   /* purple */
+   --purple-1:hsl(272, 42%, 85%);
+   --purple-2:hsl(272, 42%, 70%);
+   --purple-3:hsl(272, 42%, 60%);
+   --purple-4:hsl(272, 42%, 45%);
+   --purple-5:hsl(272, 42%, 35%);
+   --purple-6:hsl(272, 42%, 28%);
+   --purple-7:hsl(272, 42%, 12%);
+
+  
+    /* black */
+    --black-1: hsl(0, 0%, 100%);
+    --black-2: hsl(0, 0%, 93%);
+    --black-3: hsl(0, 0%, 80%);
+    --black-4: hsl(0, 0%, 70%);
+    --black-9:hsl(0, 0%, 50%);
+    --black-5: hsl(0, 0%, 40%);
+    --black-6: hsl(0, 0%, 30%);
+    --black-7: hsl(0, 0%, 18%);
+    --black-8: hsl(0, 0%, 8%);
+
+
+
+
+    /* ************************ spacing************************* */
+    --spacing-1x: 1px;
+    --spacing-2x: 2px;
+    --spacing-3x: 3px;
+    --spacing-4x: 4px;
+    --spacing-5x: 5px;
+    --spacing-6x: 5px;
+    --spacing-7x: 7px;
+    --spacing-8x: 8px;
+    --spacing-10x: 10px;
+    --spacing-0-5: 0.5rem;
+    --spacing-0-2: 0.2rem;
+    --spacing-0-8: 0.8rem;
+    --spacing-1: 1rem;
+    --spacing-1-2: 1.2rem;
+    --spacing-1-3: 1.3rem;
+    --spacing-1-5: 1.5rem;
+    --spacing-2: 2rem;
+    --spacing-2-5: 2.5rem;
+    --spacing-3: 3rem;
+    --spacing-3-5: 3.5rem;
+    --spacing-4: 4rem;
+    --spacing-5: 5rem;
+    --z-index-2: 2;
+    --z-index-3: 3;
+}
+
+/* Media Queries */
+
+@media (max-width:768px){
+
+
+   .home__section .search-form{
+        width:100%;
+    }
+
+}
