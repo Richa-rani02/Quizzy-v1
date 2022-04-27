@@ -1,52 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <link rel="icon" href="/favicon.ico" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://visualui.netlify.app/styles/components-main.css" rel="stylesheet" />
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+  <meta charset="UTF-8">
+  <link rel="icon" href="/favicon.ico" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://visualui.netlify.app/styles/components-main.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
     integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  />
-    <link href="home.css" rel="stylesheet" />
-    <title>Quizzy | Home</title>
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="./home.css" rel="stylesheet" />
+  <title>Quizzy | Home</title>
 </head>
+
 <body>
-    <nav class="navbar">
-        <div class="left-side">
-          <img
-            class="logo-img"
-            src="../Assets/quizzylogo.png"
-            alt=""
-          />
-          <h6>QUIZZY</h6>
+
+  <!-- navbar -->
+
+  <nav class="navbar">
+    <div class="left-side">
+      <img class="logo-img" src="../Assets/quizzylogo.png" alt="" />
+      <h6>QUIZZY</h6>
+    </div>
+
+    <ul class="nav-list list-style-none flex-row nav-links">
+      <a href="./index.html" class="home">
+        <li>Home</li>
+      </a>
+      <a href="./index.html" class="dashboard">
+        <li>Dashboard</li>
+      </a>
+      <a href="./pages/Auth/login.html" class="login">
+        <li>Login</li>
+      </a>
+    </ul>
+    <button class="mobile-menu-icon">
+      <i class="fa fa-bars" id="open-nav-menu" aria-hidden="true"></i>
+      <i class="fa fa-times" id="close-nav-menu" aria-hidden="true"></i>
+    </button>
+  </nav>
+
+  <!-- homeSection -->
+  <div class="home__section flex-col">
+
+
+    <!-- <SearchBox /> -->
+    <form action="" class="search-form">
+      <input type="search" id="search-bar" value="" placeholder="search Quiz here..." />
+      <label htmlFor="search-bar" class="fas fa-search"></label>
+    </form>
+
+    <!-- category -->
+    <div class="category__container top-gutter-lg">
+
+      <div class="category">
+        <div class="rules-modal">
+          <div class="img-container">
+            <img src="./Assets/cuisineindia.jpg" alt="cuisine" class="responsive-img" />
+          </div class="rules-modal">
+          <div class="category__content">
+            <h3>Famous Cuisine</h3>
+          </div>
         </div>
-  
-        <ul
-          class="nav-list list-style-none flex-row nav-links"
-        >
-          <a href="./index.html" class="home">
-            <li>Home</li>
-          </a>
-          <a href="./index.html" class="dashboard">
-            <li>Dashboard</li>
-          </a>
-          <a href="./pages/Auth/login.html" class="login">
-          <li>Login</li>
-          </a>
-        </ul>
-        <button 
-          class="mobile-menu-icon"
-        >
-        <i class="fa fa-bars" id="open-nav-menu" aria-hidden="true"></i>
-        <i class="fa fa-times" id="close-nav-menu" aria-hidden="true"></i>
-        </button>
-      </nav>
+      </div>
+      <div class="category">
+        <div class="rules-modal">
+          <div class="img-container">
+            <img src="./Assets/indianfestival.jpg" alt="cuisine" class="responsive-img" />
+          </div>
+          <div class="category__content">
+            <h3>Famous Festival</h3>
+          </div>
+        </div>
+      </div>
+      <div class="category">
+        <div class="rules-modal">
+          <div class="img-container">
+            <img src="./Assets/placesindia.jpg" alt="cuisine" class="responsive-img" />
+          </div>
+          <div class="category__content">
+            <h3>Famous Places</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-container">
+      <div class="popup">
+        <div class="modal-content display-flex-col">
+          <h2 class="heading-1 bottom-gutter-md center-text">RULES 📑</h2>
+          <div class="rules-list">
+            <div class="bottom-gutter-sm">
+              <span>There will be 10 question in this quiz</span>
+
+            </div>
+            <div class="bottom-gutter-sm">
+              <span>On attempting a question correctly. You will awarded 10 points.</span>
+
+
+            </div>
+            <div class="bottom-gutter-sm">
+              <span>On attempting a question incorrectly, 10 points will be deducted.</span>
+
+            </div>
+            <div class="bottom-gutter-sm">
+              <span>You will have only 10 seconds per each question.</span>
+            </div>
+            <div class="bottom-gutter-sm">
+              <span>Once you select your answer, you can't change it.</span>
+            </div>
+
+          </div>
+        </div>
+        <div class="modal-btn">
+          <a href="./pages/Question/question.html" class="btn btn-solid-primary btn-sm btn-rounded-5">Start Quiz</a>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 <script src="./js/navbar.js"></script>
+<script src="./js/rules.js"></script>
+
 </html>

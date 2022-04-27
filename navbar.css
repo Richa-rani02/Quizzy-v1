@@ -43,7 +43,7 @@
     padding: var(--spacing-10x) var(--spacing-1-2);
     margin: 0 var(--spacing-10x);
     cursor: pointer;
-    font-weight: 500;
+    font-weight:500;
   }
   .mobile-menu-icon {
     display: none;
