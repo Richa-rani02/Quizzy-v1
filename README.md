@@ -1,7 +1,5 @@
 <div align="center">
 
-<img alt="logo" src="public/Assets/quizzylogo.png" width="150px" height="150px" />
-
 ## Quizzy
 
 Quiz Application  [Quizzy](https://quizzy-v1.netlify.app/).
