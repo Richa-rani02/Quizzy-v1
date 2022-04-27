@@ -17,6 +17,57 @@
     <title>Quizzy | Result</title>
 </head>
 <body>
-    
+  
+   <!-- navbar -->
+
+   <nav class="navbar">
+    <div class="left-side">
+      <img class="logo-img" src="../../Assets/quizzylogo.png" alt="" />
+      <h6>QUIZZY</h6>
+    </div>
+
+    <ul class="nav-list list-style-none flex-row nav-links">
+      <a href="../../index.html" class="home">
+        <li>Home</li>
+      </a>
+      <a href="../../index.html" class="dashboard">
+        <li>Dashboard</li>
+      </a>
+      <a href="../../pages/Auth/login.html" class="login">
+        <li>Login</li>
+      </a>
+    </ul>
+    <button class="mobile-menu-icon">
+      <i class="fa fa-bars" id="open-nav-menu" aria-hidden="true"></i>
+      <i class="fa fa-times" id="close-nav-menu" aria-hidden="true"></i>
+    </button>
+  </nav>
+
+  <section class="result__section top top-gutter-sm center-text">
+    <div class="result">
+      <h2 class="heading-1 bottom-gutter-sm center-text">RESULT</h2>
+      <p class="score-text bottom-gutter-md">
+        <span class="grey-text">Final Score: </span> 10/20
+      </p>
+        <div class="question__body bottom-gutter-xl">
+          <strong class="question-heading">The western ghats in Maharashtra is known as?</strong>
+          <div class="center-text">
+            <div class="answer-options wrong-answer no-hover hover-transition">
+              Nilgiris
+            </div>
+            <div class="answer-options correct-answer no-hover hover-transition">
+              Sahyadris
+            </div>
+            <div class="answer-options hover-transition">
+              Cardamon Hills
+            </div>
+            <div class="answer-options hover-transition">
+              Annamalai
+            </div>
+          </div>
+        </div>
+    </div>
+  </section>
 </body>
+<script src="../../js/navbar.js"></script>
 </html>
