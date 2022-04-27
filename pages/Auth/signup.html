@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="icon" href="../../Assets/favicon.ico" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://visualui.netlify.app/styles/components-main.css" rel="stylesheet" />
@@ -13,10 +13,53 @@
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
   />
-    <!-- <link href="./auth.css" rel="stylesheet" /> -->
+    <link href="./auth.css" rel="stylesheet" />
     <title>Quizzy | Signup</title>
 </head>
 <body>
-    
+  
+   <!-- navbar -->
+
+   <nav class="navbar">
+    <div class="left-side">
+      <img class="logo-img" src="../../Assets/quizzylogo.png" alt="" />
+      <h6>QUIZZY</h6>
+    </div>
+
+    <ul class="nav-list list-style-none flex-row nav-links">
+      <a href="../../index.html" class="home">
+        <li>Home</li>
+      </a>
+      <a href="../../index.html" class="dashboard">
+        <li>Dashboard</li>
+      </a>
+      <a href="./login.html" class="login">
+        <li>Login</li>
+      </a>
+    </ul>
+    <button class="mobile-menu-icon">
+      <i class="fa fa-bars" id="open-nav-menu" aria-hidden="true"></i>
+      <i class="fa fa-times" id="close-nav-menu" aria-hidden="true"></i>
+    </button>
+  </nav>
+
+  <div class="auth__container">
+    <div class="auth__section">
+    <form  class="auth-form top-gutter-md flex-col">
+            <h4 class="bottom-gutter-sm">Signup</h4>
+            <input type="text" name="name" value="" placeholder="Name" class="input-box"/>
+            <input type="email" name="email" value="" placeholder="Email" class="input-box"/>
+            <input type="password" name="password" value="" placeholder="Password" class="input-box" />
+            <input type="password" name="confirmpassword" value="" placeholder="confirm Password" class="input-box" />
+            <div class="auth-links">
+            <p>Already have an account <a href="./login.html" class="link-text-primary">login</a></p>
+            </div>
+            
+            <button type="submit" class="btn btn-solid-primary btn-sm btn-rounded-5 top-gutter-md btn-md">SignUp</button>
+        </form>
+    </div>
+
+</div>
 </body>
+<script src="../../js/navbar.js"></script>
 </html>

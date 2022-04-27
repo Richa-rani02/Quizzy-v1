@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="icon" href="../../Assets/favicon.ico" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://visualui.netlify.app/styles/components-main.css" rel="stylesheet" />
@@ -13,7 +13,7 @@
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
   />
-    <link href="./home.css" rel="stylesheet" />
+    <link href="./auth.css" rel="stylesheet" />
     <title>Quizzy | Login</title>
 </head>
 <body>
@@ -26,13 +26,13 @@
     </div>
 
     <ul class="nav-list list-style-none flex-row nav-links">
-      <a href="./index.html" class="home">
+      <a href="../../index.html" class="home">
         <li>Home</li>
       </a>
-      <a href="./index.html" class="dashboard">
+      <a href="../../index.html" class="dashboard">
         <li>Dashboard</li>
       </a>
-      <a href="./pages/Auth/login.html" class="login">
+      <a href="#" class="login">
         <li>Login</li>
       </a>
     </ul>
@@ -42,18 +42,18 @@
     </button>
   </nav>
 
-  <div className="auth__container">
-    <div className="auth__section">
-    <form  className="auth-form top-gutter-lg flex-col">
-            <h4 className="bottom-gutter-sm">Login</h4>
-            <input type="email" name="email" value="" placeholder="Email" className="input-box"/>
-            <input type="password" name="password" value="" placeholder="Password" className="input-box" />
-            <div className="auth-links">
-            <p>forget your password <Link to="/login" className="link-text-primary">click here</Link></p>
-            <p>don't have an account <Link to="/signup" className="link-text-primary">create new</Link></p>
+  <div class="auth__container">
+    <div class="auth__section">
+    <form  class="auth-form top-gutter-lg flex-col">
+            <h4 class="bottom-gutter-sm">Login</h4>
+            <input type="email" name="email" value="" placeholder="Email" class="input-box"/>
+            <input type="password" name="password" value="" placeholder="Password" class="input-box" />
+            <div class="auth-links">
+            <p>forget your password <a href="#" class="link-text-primary">click here</a></p>
+            <p>don't have an account <a href="signup.html" class="link-text-primary">create new</a></p>
             </div>
             
-            <button type="submit" className="btn btn-solid-primary btn-sm btn-rounded-5 top-gutter-md btn-md">Login</button>
+            <button type="submit" class="btn btn-solid-primary btn-sm btn-rounded-5 top-gutter-md btn-md">Login</button>
         </form>
     </div>
 

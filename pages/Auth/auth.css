@@ -1,7 +1,7 @@
 @import "../../navbar.css";
-@import "./styles/base.css";
-@import "./styles/reset.css";
-@import "./styles/utility.css";
+@import "../../styles/base.css";
+@import "../../styles/reset.css";
+@import "../../styles/utility.css";
 
 .auth__container{
     display: flex;
@@ -36,7 +36,7 @@
     margin: var(--spacing-1) 0;
     border-radius: var(--spacing-0-5);
     font-size: 1rem;
-    color: var(--black-2);
+    color: var(--black-7);
 }
 .btn-md {
     width: 40%;
