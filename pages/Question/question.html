@@ -5,6 +5,7 @@
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./question.css" rel="stylesheet"/>
     <link href="https://visualui.netlify.app/styles/components-main.css" rel="stylesheet" />
     <link
     rel="stylesheet"
@@ -13,10 +14,66 @@
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
   />
-    <link href="./question.css" rel="stylesheet" />
     <title>Quizzy | Question</title>
 </head>
 <body>
-    
+    <!-- navbar -->
+
+  <nav class="navbar">
+    <div class="left-side">
+      <img class="logo-img" src="../../Assets/quizzylogo.png" alt="" />
+      <h6>QUIZZY</h6>
+    </div>
+
+    <ul class="nav-list list-style-none flex-row nav-links">
+      <a href="../../index.html" class="home">
+        <li>Home</li>
+      </a>
+      <a href="../../index.html" class="dashboard">
+        <li>Dashboard</li>
+      </a>
+      <a href="../../pages/Auth/login.html" class="login">
+        <li>Login</li>
+      </a>
+    </ul>
+    <button class="mobile-menu-icon">
+      <i class="fa fa-bars" id="open-nav-menu" aria-hidden="true"></i>
+      <i class="fa fa-times" id="close-nav-menu" aria-hidden="true"></i>
+    </button>
+  </nav>
+ 
+  <section class="questions__section">
+    <div class="question bottom-gutter-sm top-gutter-sm flex-col">
+      <div class="category-label">
+       <span>Famous Places</span>
+      </div>
+      
+      <div class="question__header top-gutter-sm">
+        <div class="left-side">
+          <p>
+            <span class="grey-text">Question: </span>1/10
+          </p>
+        </div>
+        <div class="right-side">
+          <p>
+            <span class="grey-text">Timer:</span>
+          </p>
+        </div>
+      </div>
+        <div class="question__body bottom-gutter-sm">
+          <strong class="question-heading">The western ghats in Maharashtra is known as?</strong>
+          <div class="center-text top-gutter-lg" >
+            <div class="answer-options hover-transition"> Nilgiris</div>
+            <div class="answer-options hover-transition">Sahyadris</div>
+            <div class="answer-options hover-transition">Cardamon Hills </div>
+            <div class="answer-options hover-transition">Annamalai</div>
+          </div>
+          <div class="flex-container next-btn">
+          <a href="../Result/result.html" class="btn btn-solid-primary btn-sm btn-rounded-5 auto-margin">Next</a>
+
+        </div>
+    </div>
+  </section>
 </body>
+<script src="../../js/navbar.js"></script>
 </html>
