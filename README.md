@@ -2,7 +2,7 @@
 
 ## Quizzy
 
-Quiz Application  [Quizzy](https://quizzy-v1.netlify.app/).
+Quiz Application  [Quizzy](https://quizy-v1.netlify.app/).
 
 </div>
 
